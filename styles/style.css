@@ -150,3 +150,30 @@ main{
 /*************************
         Footer area 
 **************************/
+footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    margin-top: 100px;
+    background-color: #161616;
+}
+footer h1{
+    color: #FFFFFF;
+}
+#break{
+    color:  #84888b48;
+    border: 1px solid;
+    width: 85%;
+}
+.footer-menu ul{
+    color: #FFFFFF;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.footer-menu ul li{
+    color: #979797;
+    margin: 0 20px;
+}
