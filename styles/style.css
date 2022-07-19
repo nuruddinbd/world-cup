@@ -109,7 +109,7 @@ main{
     text-decoration: none;
     color: #FFFFFF;
 }
-.match-blogs{
+.all-blogs{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
@@ -176,4 +176,30 @@ footer h1{
 .footer-menu ul li{
     color: #979797;
     margin: 0 20px;
+}
+
+/*********************************
+ website-2 upcomming-match  
+ **********************************/
+.match-schedule{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(165, 159, 159, 0.226);
+    border-radius: 5px;
+    width: 312px;
+    height: 220px;
+}
+.teams{
+    display: flex;
+}
+.team-1{
+    margin-right: 20px;
+}
+.team-2{
+    margin-left: 20px;
+}
+.match-detail{
+    text-align: center;
 }
