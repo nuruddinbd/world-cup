@@ -9,9 +9,9 @@ body{
     font-family: 'Poppins', sans-serif;
     
 }
-/* ------------------------
+/*****************************
         header section 
----------------------------*/
+-*****************************/
 header{
     display: flex;
     align-items: center;
@@ -20,7 +20,7 @@ header{
 }
 .top-banner{
     display: flex;
-    width: 1400px;
+    width: 1348px;
     height: 620px;
     background-color: #161616;
     border-radius: 30px;
@@ -68,3 +68,85 @@ header{
 .player img{
     height: 100%;
 }
+/**************************
+        Main Area
+******************************/
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+.info-zone{
+    background-color: black;
+    width: 312px;
+    height: 250px;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.upcoming, .groups{
+    background-color: #FFFFFF;
+    text-align: center;
+    margin: 0 25px;
+    padding: 15px 0;
+    border-radius: 8px;
+}
+.upcoming a, .groups a{
+    text-decoration: none;
+    color: black;
+}
+.blog{
+    background-color: #DD0000;
+    text-align: center;
+    margin: 0 25px;
+    padding: 15px 0;
+    border-radius: 8px;
+}
+.blog a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.match-blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 20px;
+}
+.blog-review{
+    width: 312px;
+    height: 362px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.blog-image{
+    width: 340px;
+    margin-bottom: 10px;
+}
+.blog-title{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+#transfer{
+    text-decoration: none;
+    color: black;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    padding: 4px 16px;
+}
+.icons{
+    margin-left: 15px;
+}
+.fa-clock{
+    color: lightcoral;
+    margin-right: 50px;
+}
+.fa-message{
+    color: teal;
+}
+
+/*************************
+        Footer area 
+**************************/
