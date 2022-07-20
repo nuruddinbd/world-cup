@@ -146,6 +146,18 @@ main{
 .fa-message{
     color: teal;
 }
+.view{
+    margin-top: 50px;
+    text-align: center;
+}
+.view a{
+    text-decoration: none;
+    background-color: #DD0000;
+    color: #FFFFFF;
+    padding: 10px 25px;
+    border-radius: 5px;
+    visibility: hidden;
+}
 
 /*************************
         Footer area 
@@ -177,7 +189,12 @@ footer h1{
     color: #979797;
     margin: 0 20px;
 }
-
+.social-media a{
+    text-decoration: none;
+    color: #69DDF0;
+    font-size: 40px;
+    margin-right: 20px;
+}
 /*********************************
  website-2 upcomming-match  
  **********************************/
