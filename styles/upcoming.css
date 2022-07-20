@@ -14,17 +14,16 @@ body{
 -*****************************/
 header{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
     margin-top: 40px;
 }
-.container{
+.top-banner{
+    display: flex;
     width: 1348px;
     height: 620px;
     background-color: #161616;
     border-radius: 30px;
-}
-.top-banner{
-    display: flex;
     margin: 0;
 }
 .quote{
@@ -73,9 +72,6 @@ header{
         Main Area
 ******************************/
 main{
-     
-}
-.mid-area{
     display: flex;
     justify-content: center;
     margin-top: 130px;
@@ -91,76 +87,56 @@ main{
     flex-direction: column;
     justify-content: space-evenly;
 }
-.upcoming, .groups{
+.upcoming{
+    background-color: #DD0000;
+    text-align: center;
+    margin: 0 25px;
+    padding: 15px 0;
+    border-radius: 8px;
+}
+.upcoming a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.groups, .blog{
     background-color: #FFFFFF;
     text-align: center;
     margin: 0 25px;
     padding: 15px 0;
     border-radius: 8px;
 }
-.upcoming a, .groups a{
+.groups a, .blog a{
     text-decoration: none;
     color: black;
 }
-.blog{
-    background-color: #DD0000;
-    text-align: center;
-    margin: 0 25px;
-    padding: 15px 0;
-    border-radius: 8px;
-}
-.blog a{
-    text-decoration: none;
-    color: #FFFFFF;
-}
+
 .all-blogs{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
     row-gap: 20px;
 }
-.blog-review{
+.match-schedule{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(165, 159, 159, 0.226);
+    border-radius: 5px;
     width: 312px;
-    height: 362px;
-    border: 1px solid gray;
-    border-radius: 10px;
+    height: 220px;
 }
-.blog-image{
-    width: 340px;
-    margin-bottom: 10px;
+.teams{
+    display: flex;
 }
-.blog-title{
-    margin-top: 15px;
-    margin-left: 15px;
+.team-1{
+    margin-right: 20px;
 }
-#transfer{
-    text-decoration: none;
-    color: black;
-    border: 1px solid #161616;
-    border-radius: 5px;
-    padding: 4px 16px;
+.team-2{
+    margin-left: 20px;
 }
-.icons{
-    margin-left: 15px;
-}
-.fa-clock{
-    color: lightcoral;
-    margin-right: 50px;
-}
-.fa-message{
-    color: teal;
-}
-.view{
-    margin-top: 50px;
+.match-detail{
     text-align: center;
-}
-.view a{
-    text-decoration: none;
-    background-color: #DD0000;
-    color: #FFFFFF;
-    padding: 10px 25px;
-    border-radius: 5px;
-    visibility: hidden;
 }
 
 /*************************
@@ -198,48 +174,4 @@ footer h1{
     color: #69DDF0;
     font-size: 40px;
     margin-right: 20px;
-}
-
-/****************************
-    Media Queries 
-***************************/
-/*** Mobile Devices ***/
-/* @media only screen and (max-width: 680px) {
-    header{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .top-banner , .info-zone{
-        flex-direction: column;
-    }
-    .all-blogs{
-        grid-template-columns: repeat(1, 1fr);
-    }
-} */
-
-/******** Tablet View ********/
-
-@media only screen and (min-width: 680px) and (max-width: 992px) {
-    .container{
-        width: 100%;
-    }
-    main{
-        display: flex;
-        
-        width: 100%;
-    }
-    .mid-area{
-        display: flex;
-        flex-direction: column;
-    }
-    .first{
-        display: flex;
-        justify-items: right;
-    }
-    
-    .all-blogs{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
