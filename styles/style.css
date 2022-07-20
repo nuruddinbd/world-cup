@@ -25,7 +25,7 @@ header{
 }
 .top-banner{
     display: flex;
-    margin: 0;
+    height: 100%;
 }
 .quote{
     width: 50%;
@@ -50,7 +50,8 @@ header{
 .quote a{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     background-color: #DD0000;
     color: #FFFFFF;
@@ -204,42 +205,215 @@ footer h1{
     Media Queries 
 ***************************/
 /*** Mobile Devices ***/
-/* @media only screen and (max-width: 680px) {
+@media only screen and (max-width: 688px) {
     header{
-        display: flex;
-        flex-direction: column;
+        margin: 0;
     }
-    
-    .top-banner , .info-zone{
-        flex-direction: column;
-    }
-    .all-blogs{
-        grid-template-columns: repeat(1, 1fr);
-    }
-} */
-
-/******** Tablet View ********/
-
-@media only screen and (min-width: 680px) and (max-width: 992px) {
     .container{
+        width: 100%;
+        height: 720px;
+    }
+    .top-banner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 720px;   
+    }
+    .quote{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .quote h1{
+        font-size: 40px;
+        height: 150px;
+        width: 450px;
+        text-align: center;
+        line-height: normal;
+        
+    }
+    .quote p{
+        text-align: center;
+        height: 100px;
+    }
+    .quote a{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        text-decoration: none;
+        background-color: #DD0000;
+        color: #FFFFFF;
+        font-size: 25px;
+        padding: 15px 25px;
+        margin: 0px;
+        width: 200px;
+
+    }
+    .player{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
     }
     main{
         display: flex;
-        
+        justify-content: center;
         width: 100%;
     }
     .mid-area{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
     }
-    .first{
+    .info{
         display: flex;
-        justify-items: right;
+        justify-content: center;
     }
-    
+    .info-zone{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 200px;
+        border: 0;
+        background-color: #FFFFFF;
+    }
+    .upcoming, .groups, .blog{
+        border: 2px solid gray;
+        height: 50px;
+        width: 200px;
+        margin: 10px 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .all-blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog-review{
+        width: 100%;
+        height: 500px;
+        border: 1px solid gray;
+        border-radius: 10px;
+    }
+    .blog-image {
+        width: 100%;
+    }
+    .blog-image img{
+        width: 100%;
+    }
+    .view a{
+        visibility: hidden;
+    }
+    footer{
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+    .footer-menu{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-menu ul{
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-menu ul li{
+        width: 150px;
+        margin: 10px 25px;
+    }
+}
+
+/******** Tablet View ********/
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+        height: 620px;
+    }
+    .top-banner{
+        display: flex;
+    }
+    .quote{
+        width: 40%;
+    }
+    .quote h1{
+        width: 420px;
+        height: 200px;
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .quote p{
+        color: #FFFFFF;
+        width: 400px;
+        height: 120px;
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .player{
+        width: 50%;
+    }
+    .player img{
+        width: 100%;
+        height: 100%;  
+    }
+    main{
+        display: flex;
+        justify-content: center;
+    }
+    .mid-area{
+        display: flex;
+        flex-direction: column;
+    }
+    .info-zone{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100px;
+        background-color: #FFFFFF;
+        border: 0;
+    }
+    .upcoming, .groups, .blog{
+        border: 2px solid gray;
+        height: 50px;
+        width: 200px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .all-blogs{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    .view a{
+        visibility: visible;
+    }
+    footer{
+        width: 100%;
+    }
+    .footer-menu{
+        margin: 0;
+    }
+    .footer-menu ul{
+        padding-left: 0;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .footer-menu ul li{
+        width: 150px;
+        margin: 10px 25px;
     }
 }
